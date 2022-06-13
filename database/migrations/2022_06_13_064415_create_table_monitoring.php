@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('client');
             $table->string('leader_name');
             $table->string('leader_email');
-            $table->string('leader_image');
+            $table->string('leader_image')->nullable();
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('progress');

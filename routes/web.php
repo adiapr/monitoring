@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MonitoringController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/',                         [MonitoringController::class, 'viewMonitoring']);
+Route::post('/addMonitoring',           [MonitoringController::class, 'addMonitoring']);
+Route::post('/deleteMonitoring/{id}',   [MonitoringController::class, 'deleteMonitoring']);
+Route::post('/updateMonitoring/{id}',   [MonitoringController::class, 'updateMonitoring']);
