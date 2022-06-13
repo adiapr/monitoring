@@ -8,5 +8,5 @@
 </p>
 
 ## Overview
-<img src="img/Capture1.PNG" width="100%">
+<img src="https://github.com/adiapr/monitoring/blob/main/public/img/Capture1.PNG?raw=true" width="100%">
 
